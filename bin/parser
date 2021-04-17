@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+require './lib/log_parser.rb'
+
+filename = ARGV[0]
+obj = LogParser.new(filename)
+obj.print_popular
+puts "\n"
+obj.print_unique
